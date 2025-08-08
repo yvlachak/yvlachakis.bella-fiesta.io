@@ -1,0 +1,63 @@
+/* Base styles */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #FFF9F5;
+  color: #A1674A;
+  font-family: 'Georgia', 'Libre Baskerville', serif;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  padding: 2rem 1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.menu-section {
+  margin-bottom: 2.5rem;
+}
+
+.menu-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.item p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.optional {
+  font-style: italic;
+}
+
+@media (min-width: 48rem) {
+  .menu-section h2 {
+    font-size: 1.75rem;
+  }
+  .item h3 {
+    font-size: 1.3rem;
+  }
+  .item p {
+    font-size: 1.1rem;
+  }
+}

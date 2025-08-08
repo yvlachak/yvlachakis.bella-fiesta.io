@@ -28,17 +28,42 @@ body {
 
 /* Menu layout */
 .menu {
-  padding: 6rem 1rem; /* Increased padding to prevent overlap with flowers */
+  padding: 8rem 1rem 8rem 1rem; /* top and bottom padding increased */
   max-width: 40rem;
   margin: 0 auto;
 }
 
+/* Bella's Feature */
+.feature-section {
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #A1674A22;
+}
+
+.feature-section h1 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.feature-section h3 {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-section p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
 .menu-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .menu-section h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  text-decoration: underline;
   margin-bottom: 1rem;
 }
 
@@ -63,14 +88,19 @@ body {
 /* Tablet and desktop scaling */
 @media (min-width: 48rem) {
   .menu-section h2 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
+  }
+
+  .feature-section h1 {
+    font-size: 2rem;
   }
 
   .item h3 {
     font-size: 1.3rem;
   }
 
-  .item p {
+  .item p,
+  .feature-section p {
     font-size: 1.1rem;
   }
 }
@@ -78,7 +108,7 @@ body {
 /* Small screen optimization */
 @media (max-width: 400px) {
   .menu {
-    padding: 5rem 0.75rem; /* Slightly less padding for compact height */
+    padding: 6rem 0.75rem;
   }
 
   .menu-section {
@@ -90,14 +120,19 @@ body {
   }
 
   .menu-section h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .feature-section h1 {
+    font-size: 1.6rem;
   }
 
   .item h3 {
     font-size: 1.1rem;
   }
 
-  .item p {
+  .item p,
+  .feature-section p {
     font-size: 0.95rem;
   }
 }

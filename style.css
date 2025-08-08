@@ -12,14 +12,23 @@ body {
   text-align: center;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Floral background container */
+.floral-background {
+  background:
+    url('top_flower.png') top center no-repeat,
+    url('bottom_flower.png') bottom center no-repeat;
+  background-size: contain, contain;
+  background-attachment: scroll;
+  background-color: #FDF5EB;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Menu layout */
 .menu {
-  padding: 2rem 1rem;
+  padding: 6rem 1rem; /* Increased padding to prevent overlap with flowers */
   max-width: 40rem;
   margin: 0 auto;
 }
@@ -51,21 +60,25 @@ img {
   font-style: italic;
 }
 
+/* Tablet and desktop scaling */
 @media (min-width: 48rem) {
   .menu-section h2 {
     font-size: 1.75rem;
   }
+
   .item h3 {
     font-size: 1.3rem;
   }
+
   .item p {
     font-size: 1.1rem;
   }
 }
 
+/* Small screen optimization */
 @media (max-width: 400px) {
   .menu {
-    padding: 1.5rem 0.75rem;
+    padding: 5rem 0.75rem; /* Slightly less padding for compact height */
   }
 
   .menu-section {
